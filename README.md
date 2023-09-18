@@ -82,7 +82,8 @@ $ git push -u origin main # Если команда приведёт к ошиб
 $ git push
 ```
 
-Возможности GIT
+
+Возможности GIT  
 История коммитов
 ```bash
 $git log
