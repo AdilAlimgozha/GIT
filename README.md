@@ -106,3 +106,30 @@ $git log
 ```bash
 $rm -rf .git
 ```
+
+
+Если вышла ошибка
+```bash
+$git push -u origin main
+\302\226\302\226\302\226\302\226\302\226git@github.com: Permission denied (publicke
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+То поменять путь с SSH на HTTPS и обратно вернуть на SSH
+```bash
+$git remote set-url origin https://github.com/OWNER/REPOSITORY.git
+$git remote -v
+# Verify new remote URL
+> origin  https://github.com/OWNER/REPOSITORY.git (fetch)
+> origin  https://github.com/OWNER/REPOSITORY.git (push)
+
+
+$git remote set-url origin git@github.com:OWNER/REPOSITORY.git
+$git remote -v
+# Verify new remote URL
+> origin  git@github.com:OWNER/REPOSITORY.git (fetch)
+> origin  git@github.com:OWNER/REPOSITORY.git (push)
+
+```
