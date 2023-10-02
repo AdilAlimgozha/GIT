@@ -1,5 +1,20 @@
 # GIT Шпаргалка
 
+Настройка гит через
+```bash
+$git config --global user.name "User Namovich" 
+# имя или ник нужно написать латиницей и в кавычках
+
+$git config --global user.email username@yandex.ru
+# здесь нужно указать свой настоящий email 
+```  
+
+Убедиться в правильности
+```bash
+$cat ~/.gitconfig
+$git config --list 
+```  
+
 Создание репозитория  
 ```bash
 $git init
